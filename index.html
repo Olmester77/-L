@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ølympiske Lege</title>
+    <title>Ølympiske Lege - Officielt Rulebook</title>
     <style>
         * {
             margin: 0;
@@ -15,6 +15,7 @@
             font-family: Arial, sans-serif;
             background: #f4f4f4;
             color: #222;
+            line-height: 1.6;
         }
 
         header {
@@ -42,14 +43,19 @@
             position: sticky;
             top: 0;
             z-index: 100;
+            overflow-x: auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
 
         nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
+            white-space: nowrap;
         }
 
         nav a:hover {
@@ -57,7 +63,7 @@
         }
 
         section {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             padding: 20px;
             background: white;
@@ -77,13 +83,33 @@
             color: #111;
         }
 
-        ul {
-            margin-left: 20px;
+        h3 {
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-left: 4px solid #ffd700;
+            padding-left: 10px;
+        }
+
+        h4 {
+            color: #555;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
         }
 
         li {
             margin: 8px 0;
             font-size: 1.05em;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
         }
 
         .joke-container {
@@ -152,6 +178,34 @@
             margin: 10px 0;
         }
 
+        .discipline-box {
+            background: #f9f9f9;
+            border-left: 5px solid #ffd700;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .toc {
+            background: #f0f0f0;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .toc a {
+            display: block;
+            color: #667eea;
+            text-decoration: none;
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+
+        .toc a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -166,13 +220,17 @@
             }
 
             nav a {
-                display: block;
-                margin: 5px 0;
+                margin: 5px;
+                font-size: 0.9em;
             }
 
             section {
                 margin: 10px;
                 padding: 15px;
+            }
+
+            ul, ol {
+                margin-left: 20px;
             }
 
             .joke-container {
@@ -190,39 +248,244 @@
     <header>
         <h1>🏆 Ølympiske Lege</h1>
         <p>Officiel hjemmeside for de mest tvivlsomt ærefulde discipliner</p>
+        <p style="font-size: 0.9em; margin-top: 10px;">Rulebook & Officielle Regler</p>
     </header>
 
     <nav>
-        <a href="#om">Om</a>
+        <a href="#grundlag">Grundlag</a>
+        <a href="#formål">Formål</a>
+        <a href="#principper">Principper</a>
+        <a href="#symbol">Symbol</a>
         <a href="#discipliner">Discipliner</a>
-        <a href="#regler">Regler</a>
         <a href="#jokes">Vittigheder</a>
         <a href="#halloffame">Hall of Fame</a>
     </nav>
 
-    <section id="om">
-        <h2>🍻 Om Ølympiske Lege</h2>
-        <p>Ølympiske Lege er den højeste form for sport, strategi og dårlig dømmekraft. Her kæmpes der om ære, grin og måske en smule selvrespekt.</p>
+    <section id="grundlag">
+        <h2>📖 Grundlag</h2>
+        <p>De Ølympiske Lege er en institution af høj betydning, hvor sport, kultur og samvær forenes under ét banner. Dette rulebook definerer reglerne, disciplinerne og de guiding principper, som alle øludøvere må følge.</p>
+        
+        <div class="toc">
+            <h3>📋 Indholdsfortegnelse</h3>
+            <a href="#formål">Turneringens Formål</a>
+            <a href="#alkohol">Alkoholens Rolle</a>
+            <a href="#points">Pointsystemet og Vejen til Sejr</a>
+            <a href="#principper">Ølympismens Grundlæggende Principler</a>
+            <a href="#symbol">Det Ølympiske Symbol</a>
+            <a href="#flag">Det Ølympiske Flag</a>
+            <a href="#motto">Det Ølympiske Motto</a>
+            <a href="#discipliner">De Ølympiske Lege</a>
+        </div>
+    </section>
+
+    <section id="formål">
+        <h2>🎯 Turneringens Formål</h2>
+        <p>Formålet med De Ølympiske Lege er enkelt og ædelt: At finde det ultimative Ølhold. Det hold, der ved legens afslutning har formået at balancere den menneskelige præstationsevne med et stadigt stigende alkoholindhold i blodet – og stadig klaret sig bedst – vil blive kronet som Ølympiske Mestre og indskrevet i den store gyldne Ølympiske Protokol.</p>
+        
+        <p>Hver disciplin giver et antal point, der løbende noteres og efter alle afholdte konkurrencer tælles endeligt sammen. Det hold med flest point løfter den eftertragtede Ølympiske Pokal – der naturligvis er fyldt til randen.</p>
+    </section>
+
+    <section id="alkohol">
+        <h2>🍻 Alkoholens Rolle</h2>
+        <p>Det er her, det bliver interessant. De Ølympiske Lege er nemlig ikke blot en prøve på atletisk kunnen – de er en prøve på menneskets evne til at fungere under tiltagende kemiske udfordringer.</p>
+        
+        <p>Øllen virker nemlig, ved en avanceret biokemisk proces, direkte hæmmende på spillerens motorik, reaktionsevne, rumopfattelse og i særdeleshed deres evne til at tælle egne point korrekt. Jo flere øl der er indtaget, jo sværere bliver det at præstere – og det er præcis meningen.</p>
+        
+        <h3>Straffe</h3>
+        <p>Konsekvensen af at tabe en disciplin, lave en fejl, eller blot se mistænkeligt ædru ud, er derfor oftest én eller flere af følgende straffe:</p>
+        <ul>
+            <li><strong>En tår</strong> – en lille, uskyldig slurk. Tilsyneladende harmløs, men farlig i det lange løb.</li>
+            <li><strong>En bund</strong> – glasset tømmes til bunds. Ingen diskussion, ingen forhandling.</li>
+            <li><strong>En straftår</strong> – uddelt af dommeren efter særligt pinlige præstationer.</li>
+        </ul>
+    </section>
+
+    <section id="points">
+        <h2>📊 Pointsystemet og Vejen til Sejr</h2>
+        <p>Point optjenes disciplin for disciplin. Men da øllen gradvist tynger spillernes ben, sløver deres blik og minder dem om, at de egentlig bare er her for hyggens skyld, vil pointtavlen mod slutningen af dagen afspejle en skøn blanding af talent, held og overlevelsesevne.</p>
+        
+        <p>Det vindende hold er ikke nødvendigvis det mest atletiske – det er det hold, der bedst har mestret kunsten at drikke med stil og stadig huske, hvilken ende af bordet de skal stå i.</p>
+    </section>
+
+    <section id="principper">
+        <h2>⚖️ Ølympismens Grundlæggende Principler</h2>
+        
+        <h3>1. Filosofien</h3>
+        <p>Ølympismen er en livsfilosofi, der ophøjer og forener kroppens, viljens og sindets kvaliteter i en harmonisk helhed. Ved at forene øl med kultur og fællesskab søger Ølympismen at skabe en livsstil baseret på glæden ved anstrengelse, værdien af godt kammeratskab, socialt ansvar og respekt for den gode omgangstone – inden for rammerne af den Ølympiske Bevægelse.</p>
+        
+        <h3>2. Målet</h3>
+        <p>Ølympismens mål er at sætte øllen i menneskehedens tjeneste og skabe et fredeligt, skummende samfund med høj trivsel, lav konflikt og en universelt anerkendt korrekt skumhøjde. Over- eller underskum betragtes som en alvorlig moralsk ubalance.</p>
+        
+        <h3>3. Den Ølympiske Bevægelse</h3>
+        <p>Den Ølympiske Bevægelse er en samlet, organiseret og evigt voksende indsats under Den Internationale Ølympiske Komité (IØK) bestående af Lui Kristiansen, Malte Nilsson, Ali Abbas. Den kulminerer, når verdens ølentusiaster samles til De Ølympiske Lege – hvor symbolikken med fem sammenflettede ølringe kun overgås af det faktiske antal tomme glas bagefter.</p>
+        
+        <h3>4. Lige Rettigheder</h3>
+        <p>Udøvelsen af øllege er en menneskeret. Ethvert individ skal have adgang til deltagelse i øllege uden forskelsbehandling af nogen art. Den Ølympiske ånd kræver gensidig forståelse præget af venskab, solidaritet og fair play – samt en rimelig fordeling af de kolde øl.</p>
+        
+        <h3>5. Politisk Neutralitet</h3>
+        <p>I erkendelse af at øllege foregår inden for samfundets rammer, skal organisationer tilknyttet den Ølympiske Bevægelse forholde sig politisk neutrale. De har ret og pligt til selvstændighed, herunder retten til frit at fastlægge reglerne for øllege, bestemme deres organisationers struktur og ledelse samt sikre, at principperne for god forvaltning overholdes – navnlig hvad angår korrekt håndtering af fadøl.</p>
+        
+        <h3>6. Ingen Diskrimination</h3>
+        <p>De rettigheder og friheder, der er fastsat i denne Ølympiske Pagt, skal sikres uden forskelsbehandling af nogen art, uanset race, hudfarve, køn, seksuel orientering, sprog, religion, politisk eller anden overbevisning, national eller social oprindelse, formueforhold, fødsel – eller foretrukken øltype.</p>
+        
+        <h3>7. Medlemskab</h3>
+        <p>Medlemskab af den Ølympiske Bevægelse kræver overholdelse af den Ølympiske Pagt samt officiel anerkendelse fra IØK – som forbeholder sig ret til at godkende ansøgere efter evne til at holde skum, holde balancen og holde stemningen.</p>
+    </section>
+
+    <section id="symbol">
+        <h2>🏅 Det Ølympiske Symbol</h2>
+        <p>Det Ølympiske symbol består af fem sammenflettet ølringe af lige store dimensioner, svarende til fem fulde fadøl. Ringene kan anvendes alene eller i op til fem forskellige farver.</p>
+        
+        <h3>Farverne</h3>
+        <ul>
+            <li>🟨 Pilsnerguld</li>
+            <li>🟫 Ravnbrun</li>
+            <li>⬛ Sortøl-sort</li>
+            <li>🟩 Humle-grøn</li>
+            <li>🟥 Rødøl-rød</li>
+        </ul>
+        
+        <p>Ringene er sammenflettet fra venstre mod højre, præcis som man sammenflettet armene når man drikker broderskål. Det Ølympiske symbol udtrykker den Ølympiske Bevægelses virke og repræsenterer foreningen af verdens fem største ølregioner samt mødet mellem verdens øldrikere ved De Ølympiske Lege – forudsat de stadig kan finde hinanden efter tredje omgang.</p>
+    </section>
+
+    <section id="flag">
+        <h2>🏳️ Det Ølympiske Flag</h2>
+        <p>Det Ølympiske flag har en hvid baggrund uden kant – hvid som skummet på en perfekt trukket fadøl. Det Ølympiske symbol i dets fem farver er placeret i midten. Flaget skal altid holdes oprejst, medmindre bæreren er nået til femte øl.</p>
+    </section>
+
+    <section id="motto">
+        <h2>📢 Det Ølympiske Motto</h2>
+        <p>Det Ølympiske motto <strong>"Hurtigere, Højere, Stærkere – Tørstigere"</strong> udtrykker den Ølympiske Bevægelses ambitioner. Det er en tilpasning af det oprindelige latinske motto, som nu lyder:</p>
+        
+        <p><em>"Citius, Altius, Fortius – Sitientius"</em></p>
+        
+        <p>Eller på godt dansk: <strong>Drik hurtigere end Elias, rejs glasset højere end Degn, vær stærkere end tømmermændene, og gør det sammen med gode venner.</strong></p>
     </section>
 
     <section id="discipliner">
-        <h2>🏅 Discipliner</h2>
-        <ul>
-            <li>🎯 Beer Pong</li>
-            <li>🥒 Kævle</li>
-            <li>🏌️ Øl-Kroket</li>
-            <li>🏃 Øl-Stafet</li>
-        </ul>
-    </section>
+        <h2>🎯 De Ølympiske Lege - Discipliner</h2>
 
-    <section id="regler">
-        <h2>📜 Grundregler</h2>
-        <ul>
-            <li>Dommeren har altid ret.</li>
-            <li>Hvis dommeren tager fejl, gælder regel 1.</li>
-            <li>Alle diskussioner afgøres med enten grin eller ekstra tåre.</li>
-            <li>Fair play er valgfrit – underholdning er ikke.</li>
-        </ul>
+        <div class="discipline-box">
+            <h3>1️⃣ Ølbowling</h3>
+            
+            <h4>Baneopsætning</h4>
+            <p>Placér to stole i hver ende af banen med et mellemrum på ca. 1 meter mellem holdets egne stole. Afstanden mellem holdene bør være mindst 5 meter. En øl placeres i mellemrummet mellem holdets stole – dette er den øl, modstanderholdet skal forsøge at vælte. En ekstra øl, kaldet keglen, placeres midt på banen på langs. Dommeren sidder i midten udenfor banen. Alle spillere starter med en øl.</p>
+            
+            <h4>Spilleregler</h4>
+            <ul>
+                <li>Holdene skiftes til at bowle mod modstanderholdets øl. Kun én spiller bowler per tur.</li>
+                <li>Vælter man modstanderholdets øl, får man 1 point, og modstanderholdet skal bunde deres nuværende øl.</li>
+                <li>Rammer man keglen i midten, skal holdet tage en straftår – typisk en halv bunder.</li>
+                <li>Ryger bolden ud af banen, skal modstanderholdet hente den. Hopper de ikke over det usynlige hegn, uddeler dommeren straftåre.</li>
+                <li>Tomme øldåser kastes ind på modstanderholdets banehalvdel som forhindringer.</li>
+                <li>Inden enhver handling i spillet skal dommeren adspørges om lov – glemmes dette, uddeles straftåre.</li>
+                <li>Dommeren er øverste myndighed og kan til enhver tid indføre nye regler eller straffe snyd.</li>
+                <li>Vinderen er det hold der først når 5 point – antallet kan justeres efter behov.</li>
+            </ul>
+            
+            <h4>Ekstra Regler - Dommerkommandoer</h4>
+            <p>Dommeren kan til enhver tid råbe følgende kommandoer, hvorefter den langsomste spiller får en straf:</p>
+            <ul>
+                <li><strong>Spyd</strong> – Alle skal lægge sig ned på maven hurtigst muligt.</li>
+                <li><strong>Jorden rundt</strong> – Alle skal løbe rundt om modstanderholdets stole og tilbage.</li>
+                <li><strong>Captain Morgan</strong> – Alle skal løfte benet op på stolen og gøre honnør.</li>
+                <li><strong>Sexstilling</strong> – Holdkammeraterne skal lave en sexstilling. Dommeren afgør om hurtigst eller mest kreativt vinder.</li>
+            </ul>
+        </div>
+
+        <div class="discipline-box">
+            <h3>2️⃣ Beer Pong</h3>
+            
+            <h4>Opstilling</h4>
+            <ol>
+                <li>Stil 10 kopper i en pyramide i hver ende af bordet (4-3-2-1).</li>
+                <li>Fyld hver kop ca. 1/3 op – nok til at vælte værdigt, men ikke som en swimmingpool.</li>
+                <li>Holdene står klar ved hver sin ende. Kampen kan begynde.</li>
+            </ol>
+            
+            <h4>Sådan spilles det</h4>
+            <ol>
+                <li>To hold skiftes til at kaste 2 bolde pr. runde mod modstanderens kopper.</li>
+                <li>Rammer du en kop, skal modstanderen drikke den og fjerne koppen.</li>
+                <li>Albuen skal blive bag bordkanten – vi spiller beer pong, ikke længdespring.</li>
+                <li>Det hold, der først fjerner alle modstanderens kopper, vinder æren (og måske tømmermændene).</li>
+            </ol>
+            
+            <h4>Start & Særlige Regler</h4>
+            <ul>
+                <li>Starten afgøres med sten-saks-papir eller plat/krone.</li>
+                <li>Taberholdet starter næste kamp.</li>
+                <li>Hvis du rammer din egen kop: den ryger ud, og du drikker den selv. Karma findes.</li>
+                <li>Kaster du bolden helt forbi bordet, fjernes en tilfældig kop fra din side – som selvfølgelig også skal drikkes.</li>
+            </ul>
+            
+            <h4>Kast & Forsvar</h4>
+            <ul>
+                <li>Du må kaste, som du vil: direkte kast eller bounce-kast (bolden rammer bordet først).</li>
+                <li>Bounce-kast må blokeres, men kun efter bolden har ramt bordet.</li>
+                <li>Verbale tricks, dans og dramatisk øjenkontakt er tilladt. Fysisk kontakt er ikke.</li>
+            </ul>
+        </div>
+
+        <div class="discipline-box">
+            <h3>3️⃣ Kævle</h3>
+            
+            <p>Kævle er en af ØL's kongediscipliner – hurtigt, kaotisk og med masser af point på spil.</p>
+            
+            <h4>Regler</h4>
+            <ol>
+                <li>To hold stiller sig på hver sin linje med en øl foran hver spiller.</li>
+                <li>En tom flaske placeres i midten, og en sko fungerer som kastevåben.</li>
+                <li>Hold A kaster først mod flasken.</li>
+                <li>Rammes flasken, skal hele hold A styrte deres øl, mens én spiller fra hold B rejser flasken op igen.</li>
+                <li>Når flasken er rejst, skal spilleren tilbage bag sin linje – herefter må hold A ikke drikke mere.</li>
+                <li>Holdene skiftes til at kaste.</li>
+            </ol>
+            
+            <p><strong>Første hold, der får drukket alle deres øl, vinder.</strong></p>
+        </div>
+
+        <div class="discipline-box">
+            <h3>4️⃣ Øl-Kroket</h3>
+            
+            <p>Øl-Kroket er en modificeret udgave af det klassiske kroketspil og regnes som en af de mest hellige discipliner på Østervej 17. Her kombineres præcision, strategi og tørst i en ædel kamp om hæder og point.</p>
+            
+            <h4>Regler</h4>
+            <ol>
+                <li>Banen opstilles af dommeren og består af 5 porter, som alle skal passeres for at kunne vinde.</li>
+                <li>To hold dyster mod hinanden og skiftes til at slå.</li>
+                <li>Spillerne på hvert hold roterer, så en ny spiller slår efter hver runde.</li>
+                <li>Ryger en kugle out of bounds, skal den ansvarlige spiller betale en genindtrædelsesafgift på 5 tåre af sin øl, før kuglen må placeres tilbage på banen.</li>
+                <li>Når et hold passerer en port, skal modstanderholdet tage 3 tåre af deres øl.</li>
+                <li>Hvis et hold ikke gennemfører de pågældende tåre inden næste runde, mister de deres tur.</li>
+            </ol>
+            
+            <h4>Sejr</h4>
+            <p>Det hold, der først passerer alle 5 porter og rammer den Gylende Dåse for enden af banen, kåres som vindere af disciplinen.</p>
+        </div>
+
+        <div class="discipline-box">
+            <h3>5️⃣ Øl-Stafet</h3>
+            
+            <p>Øl-Stafetten er disciplinen, hvor fart, balance og evnen til at træffe dårlige beslutninger hurtigt sættes på prøve.</p>
+            
+            <h4>Regler</h4>
+            <ol>
+                <li>Hvert hold består af mindst 4 deltagere.</li>
+                <li>Deltagerne stiller sig på række bag startlinjen med en øl til hver.</li>
+                <li>Første deltager skal drikke sin øl, før stafetten må fortsætte.</li>
+                <li>Når øllen er tømt, løber deltageren den fastlagte rute og giver stafetten videre til næste holdkammerat.</li>
+                <li>Næste deltager må først begynde at drikke, når stafetten er overdraget korrekt.</li>
+                <li>Tabes stafetten, skal den samles op, og den skyldige deltager tager 3 tåre som straf.</li>
+                <li>Forsøg på at snyde med ufuldstændigt tømte øl straffes med 5 tåre til hele holdet.</li>
+            </ol>
+            
+            <h4>Sejr</h4>
+            <p>Det hold, der først får alle deltagere gennem banen og over målstregen, vinder.</p>
+            
+            <h4>⚠️ Dommerens Ret</h4>
+            <p>Dommeren har til enhver tid ret til at kræve et "bundtjek". Ved tvivl er dommeren altid enig med sig selv.</p>
+        </div>
     </section>
 
     <section id="jokes">
@@ -243,10 +506,16 @@
     <section id="halloffame">
         <h2>👑 Hall of Fame</h2>
         <p>Her hædres legenderne, myterne og dem der "lige vandt én gang men stadig taler om det".</p>
+        <ul>
+            <li>Lui Kristiansen - Grundlægger og Eternal Champion</li>
+            <li>Malte Nilsson - Master of Beer Pong</li>
+            <li>Ali Abbas - Kævle Legend</li>
+        </ul>
     </section>
 
     <footer>
         <p>© Ølympiske Lege – Hvor reglerne er vejledende og stemningen er obligatorisk høj</p>
+        <p style="font-size: 0.9em; margin-top: 10px;">IØK - Den Internationale Ølympiske Komité</p>
     </footer>
 
     <script>
@@ -254,14 +523,10 @@
             const jokeContainer = document.getElementById('jokeContainer');
             const errorContainer = document.getElementById('errorContainer');
             
-            // Clear previous error
             errorContainer.innerHTML = '';
-            
-            // Show loading state
             jokeContainer.innerHTML = '<p class="loading">Henter vittighed...</p>';
             
             try {
-                // Using JokeAPI - free API for jokes
                 const response = await fetch('https://v2.jokeapi.dev/joke/Any?type=single&lang=en');
                 
                 if (!response.ok) {
@@ -274,7 +539,6 @@
                     throw new Error('API fejl');
                 }
                 
-                // Display the joke
                 if (data.type === 'single') {
                     jokeContainer.innerHTML = `<p class="joke-text">😄 ${data.joke}</p>`;
                 } else if (data.type === 'twopart') {
@@ -290,9 +554,8 @@
             }
         }
 
-        // Optional: Load a joke when page loads
         window.addEventListener('load', () => {
-            console.log('Vittigheds-generator klar!');
+            console.log('Ølympiske Lege - Officielt Rulebook klar!');
         });
     </script>
 </body>
