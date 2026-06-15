@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ølympiske Lege</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #ddd;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        section:first-of-type {
+            margin-top: 30px;
+        }
+
+        h2 {
+            border-bottom: 3px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin: 8px 0;
+            font-size: 1.05em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            background: #111;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🏆 Ølympiske Lege</h1>
+        <p>Officiel hjemmeside for de mest tvivlsomt ærefulde discipliner</p>
+    </header>
+
+    <nav>
+        <a href="#om">Om</a>
+        <a href="#discipliner">Discipliner</a>
+        <a href="#regler">Regler</a>
+        <a href="#halloffame">Hall of Fame</a>
+    </nav>
+
+    <section id="om">
+        <h2>🍻 Om Ølympiske Lege</h2>
+        <p>Ølympiske Lege er den højeste form for sport, strategi og dårlig dømmekraft. Her kæmpes der om ære, grin og måske en smule selvrespekt.</p>
+    </section>
+
+    <section id="discipliner">
+        <h2>🏅 Discipliner</h2>
+        <ul>
+            <li>🎯 Beer Pong</li>
+            <li>🥒 Kævle</li>
+            <li>🏌️ Øl-Kroket</li>
+            <li>🏃 Øl-Stafet</li>
+        </ul>
+    </section>
+
+    <section id="regler">
+        <h2>📜 Grundregler</h2>
+        <ul>
+            <li>Dommeren har altid ret.</li>
+            <li>Hvis dommeren tager fejl, gælder regel 1.</li>
+            <li>Alle diskussioner afgøres med enten grin eller ekstra tåre.</li>
+            <li>Fair play er valgfrit – underholdning er ikke.</li>
+        </ul>
+    </section>
+
+    <section id="halloffame">
+        <h2>👑 Hall of Fame</h2>
+        <p>Her hædres legenderne, myterne og dem der "lige vandt én gang men stadig taler om det".</p>
+    </section>
+
+    <footer>
+        <p>© Ølympiske Lege – Hvor reglerne er vejledende og stemningen er obligatorisk høj</p>
+    </footer>
+</body>
+</html>
