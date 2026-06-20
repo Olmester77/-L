@@ -73,11 +73,13 @@
             position: sticky;
             top: 0;
             z-index: 100;
+            overflow-x: auto;
         }
 
         .nav-item {
             position: relative;
             flex: 1;
+            min-width: 150px;
         }
 
         .nav-button {
@@ -263,6 +265,84 @@
             border-left: none;
             padding-left: 0;
             color: #667eea;
+            font-size: 1.3em;
+        }
+
+        .team-name-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .team-athletes {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+        }
+
+        .hall-of-fame-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 50%, #1a1a1a 100%);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .hall-of-fame-section h2 {
+            border-bottom: 3px solid #ffd700;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .legend-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .legend-card {
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid #ffd700;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .legend-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+        }
+
+        .legend-emoji {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .legend-name {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #ffd700;
+            margin-bottom: 5px;
+        }
+
+        .legend-title {
+            color: #ddd;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .legend-achievement {
+            color: #fff;
+            font-size: 0.9em;
         }
 
         .hidden {
@@ -297,9 +377,14 @@
 
             .nav-item {
                 flex: 1 1 50%;
+                min-width: 100px;
             }
 
             .athletes-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+
+            .legend-grid {
                 grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             }
 
@@ -343,9 +428,13 @@
                 <span>▼</span>
             </button>
             <div class="dropdown">
-                <a href="#athletes" onclick="showSection('teams')">Se Alle Atleter</a>
-                <a href="#teams" onclick="showSection('teams')">Hold Oversigt</a>
+                <a href="#teams" onclick="showSection('teams')">Se Alle Hold</a>
             </div>
+        </div>
+        <div class="nav-item">
+            <button class="nav-button" onclick="showSection('halloffame')">
+                🏆 Hall of Fame
+            </button>
         </div>
     </nav>
 
@@ -607,71 +696,93 @@
 
     <!-- TEAMS & ATHLETES SECTION -->
     <div id="teams-content" class="hidden">
-        <section id="athletes">
-            <h2>👥 Ølympiske Atleter</h2>
-            <p>Mød de legendariske atleter fra De Ølympiske Lege:</p>
-            
-            <div class="athletes-grid">
-                <div class="athlete-card">
-                    <div class="athlete-name">Lui Kristiansen</div>
-                    <div class="athlete-role">Grundlægger & Leder</div>
-                    <div class="athlete-specialty">🏆 All-around Master</div>
-                </div>
-
-                <div class="athlete-card">
-                    <div class="athlete-name">Malte Nilsson</div>
-                    <div class="athlete-role">Specialiseret Atlet</div>
-                    <div class="athlete-specialty">🏓 Beer Pong Champion</div>
-                </div>
-
-                <div class="athlete-card">
-                    <div class="athlete-name">Ali Abbas</div>
-                    <div class="athlete-role">Specialiseret Atlet</div>
-                    <div class="athlete-specialty">👟 Kævle Legend</div>
-                </div>
-            </div>
-        </section>
-
         <section id="teams">
-            <h2>👑 Hold Oversigt</h2>
+            <h2>👥 Hold Oversigt</h2>
             
             <div class="team-box">
-                <h3>Team Alpha</h3>
-                <ul>
-                    <li>Lui Kristiansen (Kaptajn)</li>
-                    <li>Malte Nilsson</li>
-                    <li>Team Members TBD</li>
-                </ul>
-                <p><strong>Specialitet:</strong> Beer Pong & Øl-Kroket</p>
+                <h3>🟨 Team Pilsner</h3>
+                <div class="team-name-badge">Pilsnerguld 🍺</div>
+                <div class="team-athletes">Atleter, som endnu er ukendt indtil lodtrækning</div>
             </div>
 
             <div class="team-box">
-                <h3>Team Beta</h3>
-                <ul>
-                    <li>Ali Abbas (Kaptajn)</li>
-                    <li>Team Members TBD</li>
-                </ul>
-                <p><strong>Specialitet:</strong> Kævle & Øl-Stafet</p>
+                <h3>🟫 Team Ravnbrun</h3>
+                <div class="team-name-badge">Ravnbrun 🍺</div>
+                <div class="team-athletes">Atleter, som endnu er ukendt indtil lodtrækning</div>
             </div>
 
             <div class="team-box">
-                <h3>Team Gamma</h3>
-                <ul>
-                    <li>Ledige Pladser</li>
-                </ul>
-                <p><strong>Specialitet:</strong> Alle Discipliner</p>
+                <h3>⬛ Team Sortøl</h3>
+                <div class="team-name-badge">Sortøl-Sort 🍺</div>
+                <div class="team-athletes">Atleter, som endnu er ukendt indtil lodtrækning</div>
+            </div>
+
+            <div class="team-box">
+                <h3>🟩 Team Humleøl</h3>
+                <div class="team-name-badge">Humle-Grøn 🍺</div>
+                <div class="team-athletes">Atleter, som endnu er ukendt indtil lodtrækning</div>
+            </div>
+
+            <div class="team-box">
+                <h3>🟥 Team Rødøl</h3>
+                <div class="team-name-badge">Rødøl-Rød 🍺</div>
+                <div class="team-athletes">Atleter, som endnu er ukendt indtil lodtrækning</div>
             </div>
         </section>
+    </div>
 
-        <section id="halloffame">
-            <h2>🏆 Hall of Fame</h2>
-            <p>Her hædres legenderne, myterne og dem der "lige vandt én gang men stadig taler om det".</p>
-            <ul>
-                <li>Lui Kristiansen - Grundlægger og Eternal Champion</li>
-                <li>Malte Nilsson - Master of Beer Pong</li>
-                <li>Ali Abbas - Kævle Legend</li>
-            </ul>
-        </section>
+    <!-- HALL OF FAME SECTION -->
+    <div id="halloffame-content" class="hidden">
+        <div class="hall-of-fame-section">
+            <section id="halloffame">
+                <h2>🏆 Hall of Fame - Legendariske Ølympiske Kampe</h2>
+                <p>Her hyldes verdens største øl-sport legender. Disse mænd og kvinder har sat deres præg på De Ølympiske Lege gennem deres uovertruffen talent, mod og ubetinget dedikation til sporten.</p>
+                
+                <div class="legend-grid">
+                    <div class="legend-card">
+                        <div class="legend-emoji">🏆</div>
+                        <div class="legend-name">Lui Kristiansen</div>
+                        <div class="legend-title">Grundlægger & Eternal Champion</div>
+                        <div class="legend-achievement">Ubesejret i alle discipliner. Legendarisk visioner om sport og samfund.</div>
+                    </div>
+
+                    <div class="legend-card">
+                        <div class="legend-emoji">🏓</div>
+                        <div class="legend-name">Malte Nilsson</div>
+                        <div class="legend-title">Beer Pong Mester</div>
+                        <div class="legend-achievement">Holderer rekorded for præcision og hastighed. 15 gange Beer Pong Champion.</div>
+                    </div>
+
+                    <div class="legend-card">
+                        <div class="legend-emoji">👟</div>
+                        <div class="legend-name">Ali Abbas</div>
+                        <div class="legend-title">Kævle Legende</div>
+                        <div class="legend-achievement">Uovertruffen i kaos-disciplinen. Mest karismatisk spiller nogensinde.</div>
+                    </div>
+
+                    <div class="legend-card">
+                        <div class="legend-emoji">⚡</div>
+                        <div class="legend-name">Den Ukjente Stafetmester</div>
+                        <div class="legend-title">Øl-Stafet Inspirator</div>
+                        <div class="legend-achievement">Revolutionerede stafet-strategien med innovativ flaskehåndtering.</div>
+                    </div>
+
+                    <div class="legend-card">
+                        <div class="legend-emoji">🎯</div>
+                        <div class="legend-name">Bowling Pioneren</div>
+                        <div class="legend-title">Ølbowling Innovatør</div>
+                        <div class="legend-achievement">Første til at perfektionere kunsten at bowle med præcision under påvirkning.</div>
+                    </div>
+
+                    <div class="legend-card">
+                        <div class="legend-emoji">👑</div>
+                        <div class="legend-name">Enkeltstart Supremen</div>
+                        <div class="legend-title">Flip-Master Extraordinaire</div>
+                        <div class="legend-achievement">Verdens hurtigste enkeltstart tid: 2 minutter og 47 sekunder.</div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 
     <footer>
@@ -681,15 +792,22 @@
 
     <script>
         function showSection(sectionName) {
-            const ruleBook = document.getElementById('rulebook-content');
+            const rulebook = document.getElementById('rulebook-content');
             const teams = document.getElementById('teams-content');
+            const halloffame = document.getElementById('halloffame-content');
 
+            // Hide all sections
+            rulebook.classList.add('hidden');
+            teams.classList.add('hidden');
+            halloffame.classList.add('hidden');
+
+            // Show selected section
             if (sectionName === 'rulebook') {
-                ruleBook.classList.remove('hidden');
-                teams.classList.add('hidden');
+                rulebook.classList.remove('hidden');
             } else if (sectionName === 'teams') {
-                ruleBook.classList.add('hidden');
                 teams.classList.remove('hidden');
+            } else if (sectionName === 'halloffame') {
+                halloffame.classList.remove('hidden');
             }
         }
 
